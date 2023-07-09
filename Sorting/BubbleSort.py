@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 def bubble_sort(arr):
     n = len(arr)
     
