@@ -4,7 +4,8 @@ import subprocess
 # Execute a shell command and capture its output
 def execute_command(command):
     try:
-        output = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT, universal_newlines=True)
+        output = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT, 
+                                         universal_newlines=True)
         return output
     except subprocess.CalledProcessError as e:
         # Handle command execution errors
